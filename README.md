@@ -10,11 +10,11 @@ For the fibonacci method, I have several comments:
 2. I don't see where the argument is used within the method. `maxNumber` is declared but is reassigned with an `int` type inside the method. Why not make the following change: `public static <T> void function(T maxNumber)` → `public static void fibonacci(int maxNumber)`. Then maxNumber won't have to be reassigned.
 3. This method is dynamic, not recursive. Recursively, you could do the following:
 
-- Take the position of the target fibonacci number as an argument
-- Check if n is less than or equal to 1, in which case just print n out
-- Otherwise print and return fibonacci(n - 1) + fibonacci(n - 2)
+- Take the position of the target fibonacci number as an argument (in our case, we already have maxNumber)
+- Check if maxNumber is less than or equal to 1, in which case just print maxNumber out
+- Otherwise print and return fibonacci(maxNumber - 1) + fibonacci(maxNumber - 2)
 
-The dynamic method is faster as it has a complexity of O(n), but it was not recursive.
+The dynamic method is faster as it has a complexity of O(n), but it is not recursive.
 
 For the rest of the program, there are lots of empty line breaks. Removing these and limiting them to maybe one line break between blocks (if you really want to) can massively aid the readability of your program. The indentation is also very inconsistent, and can make following code blocks difficult. Think of indentation as hierarchy: if it's to the left of a code block, it is outside that block. If it is to the right of a block, it is inside the block. If it is on the same level as the block, then it is part of the block.
 
