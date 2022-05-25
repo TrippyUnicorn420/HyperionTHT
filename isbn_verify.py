@@ -1,6 +1,5 @@
 def verify(isbn):
 	sum = 0
-	print(len(isbn))
 	if len(isbn) == 10:
 		for i in range(9, -1, -1):
 			if isbn[10 - (i + 1)] != 'X':
@@ -22,7 +21,6 @@ def verify(isbn):
 				sum += int(int(isbn[i]) * multiplicator)
 			else:
 				sum += 10
-		print(sum)
 		if sum % 10 == 0:
 			print("Valid")
 			return
