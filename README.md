@@ -1,6 +1,6 @@
 # HyperionTHT
 ---
-## Task 1: Option 2
+## Section A: Option 2
 
 For the string reversal, this method looks good overall. It has a reliable exit condition to avoid stack overflows at line 23. I do suggest just printing the input string given from the argument of the method for the exit condition instead of noting that the input string is empty. Or better yet, just having an empty return statemtn altogether. It make the output look a bit tidier.
 
@@ -19,9 +19,9 @@ The dynamic method is faster as it has a complexity of O(n), but it was not recu
 For the rest of the program, there are lots of empty line breaks. Removing these and limiting them to maybe one line break between blocks (if you really want to) can massively aid the readability of your program. The indentation is also very inconsistent, and can make following code blocks difficult. Think of indentation as hierarchy: if it's to the left of a code block, it is outside that block. If it is to the right of a block, it is inside the block. If it is on the same level as the block, then it is part of the block.
 
 ---
-## Task 2
+## Section B
 
-This is an Android application I made many years ago. It is quite heavily commented and should still compile, but was also tested on Android 8.0. I now use an iPhone, so I haven't used the app in quite a long time.
+This is an Android application I made many years ago. It is quite heavily commented and should still build, but was also tested on Android 8.0 (I believe 11 is the latest version). I now use an iPhone, so I haven't used the app in quite a long time.
 
 [Here is a link to the app.](https://github.com/TrippyUnicorn420/SplitBill-Android)
 
